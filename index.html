@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping wed site in html and css</title>
+    <link rel="stylesheet" href="../cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-color: black;
+            font-family: calibri,sans-serif;
+            margin: 0px;
+            height:3000px;
+        }
+
+
+        header{
+           top: 0px;
+           display: flex;
+           background-color: rgb(30, 29, 29);
+           display: grid;
+           grid-template-columns: 2,1fr;
+           color: white;
+           height: 80px;
+           width: 1260px;
+           z-index: 1;
+           
+         
+       
+       }
+       section a{
+          
+           color: white;
+           text-decoration: none;
+       }
+
+
+       .home{
+           position:absolute;
+           top: 0px;
+           left:10px;
+           color:white;
+       }
+       .text:hover{
+           color: rgb(236, 60, 12);
+       }
+
+      .navbar {
+            display: flex;
+            padding: 10px;
+            margin-left: 1060px;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            column-gap:30px;
+        }
+
+        .menu-item {
+            position: relative;
+        }
+
+        .menu-item a {
+            display: block;
+            padding: 14px 10px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right:-10px;
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid gray;
+            border-radius: 3px;
+            z-index: 1000;
+            
+            
+            
+        }
+
+        .dropdown-menu li {
+            border-bottom: 1px solid #4a3232;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .searchicon, .carticon, .signupicon {
+            height: 20px;
+        }
+
+        .menu-item dropdown{
+            column-gap: 100px;
+             
+        }
+
+        .login-border{
+            border: 2px solid rgb(4, 186, 10);
+            padding: 5px;
+        }
+
+      .second-header{
+           
+           background-color: rgb(19, 18, 18);
+           display: grid;
+           grid-template-columns: 2,1fr;
+           color: white;
+           height: 550px;
+           width: 1260px;
+           
+         
+       
+       }
+       section a{
+          
+           color: white;
+           text-decoration: none;
+       }
+
+       .logo{
+           position: absolute;
+           left: 830px;
+           top: 180px;
+          height: 300px;
+          width: 300px;
+          transform: scale(1.05);
+          
+       }
+
+       .eartext{
+           position: absolute;
+           top:140px;
+              color: rgb(43, 42, 42);
+              font-size:200px;
+             font-style:initial;
+             font-weight: 50px;
+             
+      
+       }
+       .discription{
+           position: absolute;
+           left: 80px;
+           top:240px;  
+       }
+       .mainline1{
+           font-size: 22px;
+           line-height: 4px;
+       }
+       .mainline2{
+           
+           line-height: 20px;
+           font-size: 19.5px;
+         
+       }
+       .mainline3{
+           line-height:20px;
+           font-size: 18px;
+
+       }
+       .mainline4{
+           
+           line-height:15px;
+          
+           
+       }
+       .shopingbutton:hover{
+           background-color: rgb(237, 5, 5);
+
+       }
+      
+       .shopbutten{
+           position: absolute;
+           top: 170px;
+           background-color: rgb(248, 19, 19);
+           text-align: center;
+           align-content: center;
+           color: white;
+           border: 2px solid red;
+           height: 30px;
+           width: 75px;
+           border-radius: 5px;
+ 
+       }
+ 
+
+        .feature-product{
+            margin-top:60px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            
+        }
+
+
+       .card{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        align-items: center;
+
+     }
+
+     .card-image1{
+        margin-right: 100px;
+        margin-top: 5px;
+     }
+      .card-image2{
+        margin-right: 120px;
+      }
+      .card-image4{
+     margin-right: 100px;
+      margin-left: 120px;
+      }
+      .card-image5{
+     margin-top: 5px;
+      }
+      .card-title1{
+        margin-top:40px ;
+        font-size:13px ;
+
+      }
+      .card-title2{
+       margin-left: 20px;
+        font-size:15px ;
+
+      }
+
+      .card-title3{
+        margin-left:40px ;
+        font-size:21px ;
+
+      }
+
+      .card-title4{
+        margin-left:130px ;
+        font-size:15px ;
+
+      }
+      .card-title5{
+        margin-top: 40px;
+        font-size:13px ;
+
+      }
+
+  
+  .top-products-title{
+
+            margin-top:100px;
+            margin-left: 550px;
+            font-size:40px;
+            color: rgb(250, 250, 250);
+           
+            
+        }
+        .top-product-div2{
+            margin-top: 50px;
+            margin-left:100pxpx;
+            display:flex;
+            grid-template-columns: repeat(5,1fr);
+            justify-content:space-evenly;
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
+        .top-product-child:hover{
+           
+            border: 2px solid white;
+            border: none;
+            background-color: rgb(234, 11, 7);
+            border-radius: 3px;
+           
+           
+        }
+
+
+   .ALL-MANUE-CARDS12{
+           
+            margin-top:40PX;
+            display:flex;
+            display: grid;
+            grid-template-columns: repeat(4,3fr);
+            justify-content: space-around;
+            row-gap:10px;
+            column-gap:10px;
+            margin-left:25px;
+
+        }
+
+        .card-content12{
+            height:450px ;
+            width: 290px;
+            border: 3px solid rgb(192, 190, 190);
+            border-radius: 3px;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(43, 39, 39);
+            
+        }
+       
+        #images{
+           margin-top:15px;
+        }
+
+        .card-image:hover{
+            transform: scale(1.05);
+        }
+        
+
+        .card-main-title,.star-rating,.card-sub-title{
+            line-height:5px;
+            text-align: start;
+            top:30px;
+            margin-left:20px ;
+            color: white;
+           
+
+        }
+        .product-price{
+            text-align:start;
+            top:30px;
+            margin-left:20px ;
+            color: white;
+            
+        }
+
+        .price-decrese{
+             font-size:18px;
+        }
+
+        .divide-line{
+            width:260px;
+            margin-top: 30px;
+        }
+
+        .add-to-cart-button{
+            width: 100px;
+            background-color: rgb(249, 28, 28);
+            border: none;
+            height: 30px;
+            width: 260px;
+            color: white;
+            border-radius: 3px;
+        }
+        .card-image-color{
+            
+            background-color:rgb(59, 58, 58);
+            height:220px;
+   
+        }
+
+        .Browse-All-Products{
+           text-align: center;
+           align-content: center;
+           margin-top:180px;
+           margin-left:0px;
+            color: white;
+            font-size: 20px;
+    
+        }
+
+  .advantages-list {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            list-style-type: none; 
+            margin-top:150px;
+            margin-left:50px ;
+            line-height:20px;
+
+        }
+        .advantages-item {
+            display: flex;
+            align-items: center; 
+            margin-bottom: 20px; 
+           
+        }
+        .advantages-item img {
+            width: 50px; 
+            height: 50px;
+            margin-right: 15px; 
+           
+        }
+        .advantages-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+            color: white;
+        }
+        .advantages-item p {
+            margin: 5px 0 0;
+            color: #666;
+            color: white;
+        }
+
+        .our-advatages-title{
+            margin-top:150px;
+             margin-left:500px;
+             font-size: 20px;
+             color: white;
+        }
+
+footer{
+    position:absolute;
+    top:3400px;
+    height: 250px;
+    width:1260px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:space-between;
+    color: white;
+    background-color: rgb(30, 29, 29);
+}
+
+.footer-email{
+    height: 25px;
+    width: 250px;
+    background-color: rgb(30, 29, 29);
+    border: 2px solid white;
+    border-radius: 3px;
+    
+}
+ .footer-button{
+    width: 170px;
+    height:30px ;
+    color: white;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 3px;
+ }
+ section{
+    line-height: 30px;
+ }
+
+.social-media {
+  position: absolute;
+  top:3650px;
+  height:60px;
+  width: 1263px;
+  color: white;
+  display: grid;
+  text-align: start;
+  align-content:center;
+  grid-template-columns: repeat(2,1fr);
+  background-color: rgb(18, 18, 18);
+  
+  
+   }
+
+   .social-media-adjest{
+        display: flex;
+        justify-content: space-evenly;
+         margin-left:500px;
+         color: white;
+   }
+
+ 
+  
+    </style>
+   
+</head>
+<body>
+   
+    <header>
+
+        <section>
+            <div class="home"><h4 class="text">Tech-Shop</h4></div>
+        </section>
+  <nav class="navbar">
+    <ul class="menu">
+        <li class="menu-item dropdown">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="searchicon"><path fill="#f7f7f7" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="">Search</a></li>
+            </ul>
+        </li>
+        <li class="menu-item dropdown">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="carticon"><path fill="#f9fafa" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="../HTML-CSS PROJECT/CART-PAGE.html">Cart</a></li>
+            </ul>
+        </li>
+        <li class="menu-item dropdown">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="signupicon"><path fill="#fcfcfc" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+                <li>Hello!</li>
+                <li>Access account and manage orders</li>
+                <li><a href="../HTML-CSS PROJECT/FINAL LOGIN FORM.html"><b class="login-border">Login/Signup</b></a></li>
+                <li>Please Login</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+       <div class="second-header">
+
+        <section >
+             <img src="" alt="main logo" class="logo" >
+        </section>
+
+        <div>
+         <div class="eartext">In Ear</div>
+        </div>
+        
+    <!-- MAIN IMAGE INFORMATION -->
+    
+        <div class="discription">
+            <p><dt class="mainline1">boAt Airdopes 131</dt>
+               <dt class="mainline2"><h1>FeatherWeight For</h1></dt>
+               <dt class="mainline3"><h1>Comform All-Day.</h1></dt> 
+            </p>
+            <div class="mainline4">
+                <div>₹1,099 <strike>  ₹2,990</strike></div>
+                   
+            </div class="shopingbutton">
+            <input type="submit" name="Shop Now" value="Shop Now" class="shopbutten">
+           </div>
+        </div>
+
+<!-- feature-product -->
+<section>
+
+   <div class="feature-product">
+     <h3>Featured  Products</h3>
+   </div>
+   <ul class="card" type="none">
+    <li class="card-content">
+        <h2 class="card-title1">JBL Endurnce Run Sports</h2>
+        <img src="../HTML-CSS PROJECT/jbl500bt-1.png" alt="Card Image" class="card-image1" height="110" width="110">
+        <p class="card-title1">₹999 <strike> ₹1,590 </strike></p>
+        <!-- <a href="#" class="card1-button">Learn More</a> -->
+    </li>
+
+   
+    <li class="card-content">
+        <h2 class="card-title2">boAt Airdopes 203</h2>
+        <img src="../HTML-CSS PROJECT/boat203-1.png" alt="Card Image" class="card-image2" height="150" width="150">
+        <p class="card-title2">₹1,074 <strike> ₹3,999 </strike></p>
+        <!-- <a href="#" class="card-button">Learn More</a> -->
+    </li>
+
+    
+    <li class="card-content">
+        <h2 class="card-title3">boAt Rockerz 518</h2>
+        <img src="../HTML-CSS PROJECT/boat518-1.png" alt="Card Image" class="card-image3" height="300" width="250">
+        <p class="card-title3">₹1,299 <strike> ₹3,990 </strike></p>
+        <!-- <a href="#" class="card-button">Learn More</a> -->
+    </li>
+
+    
+    <li class="card-content">
+        <h2 class="card-title4">JBL Tune 760NC</h2>
+        <img src="../HTML-CSS PROJECT/jbl760nc-1.png" alt="Card Image" class="card-image4" height="150" width="150">
+        <p class="card-title4">₹5,999<strike> ₹7,999 </strike></p>
+        <!-- <a href="#" class="card-button">Learn More</a> -->
+         <p></p>
+    </li>
+
+    
+    <li class="card-content">
+        <h2 class="card-title5">boAt Rockerz 255</h2>
+        <img src="../HTML-CSS PROJECT/boat255r-1.png" alt="Card Image" class="card-image5" height="100" width="100">
+        <p class="card-title5">₹899<strike> ₹2,990 </strike></p>
+        <!-- <a href="#" class="card-button">Learn More</a> -->
+         
+    </li>
+</ul>
+
+</section>
+
+    <div class="top-products">
+        
+        <div class="top-products-title">
+            <b >Top Products</b>
+        </div>
+    <div class="top-product-div2">
+        <ul type="none"> 
+            <li class="top-product-child"><a href="#" style="color: white;" >All</a></li>  
+        </ul>
+
+        <ul type="none" >
+            <li class="top-product-child"><a href="#" style="color: white;"  >Headphones</a></li> 
+        </ul>
+
+        <ul type="none">
+            <li class="top-product-child"><a href="#" style="color: white;"  >Earbuds</a></li> 
+        </ul>
+
+        <ul type="none" >
+            <li class="top-product-child"><a href="#" style="color: white;"  >Earphones</a></li>  
+        </ul>
+
+        <ul type="none" >
+            <li class="top-product-child"><a href="#" style="color: white;"  >Neckbands</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <section  class="ALL-MANUE-CARDS12" >
+
+        <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+                <a href="product details.html" class="card-button"><img src="../HTML-CSS PROJECT/jbl660nc-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images"></a>
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">JBL Live 660NC</h3>
+             <p class="card-sub-title">Wireless Over-Ear NC Headphones</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹9,999</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹14,999 </strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             
+         </div>
+     </section>
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/boat518-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">boAt Rockerz 518</h3>
+             <p class="card-sub-title">On-Ear Wireless Headphones</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹1,299</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹3,990</strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>
+ 
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/boat131-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">boAt Airdopes 131</h3>
+             <p class="card-sub-title">Wireless In-Ear Earbuds</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹1,299</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹2,990 </strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>    
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/boat110-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">boAt BassHeads 110</h3>
+             <p class="card-sub-title">In-Ear Wired Earphones</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹449</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹999 </strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>    
+ 
+ <!-- row2 -->
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/boat410-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">boAt Rockerz 410</h3>
+             <p class="card-sub-title">Bluetooth & Wired On-Ear Headphones</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹1,599</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹2,990 </strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>
+ 
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/jbl200bt-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">JBL Live 200BT</h3>
+             <p class="card-sub-title">In-Ear Wireless Neckband</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹3,699</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹5,299 </strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>    
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/sonyXb910n-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">Sony WH-XB910N</h3>
+             <p class="card-sub-title">Wireless Over-Ear Headphones</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹13,489</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹19,990 </strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>
+ 
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/jbl660nc-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">JBL Tune 760NC</h3>
+             <p class="card-sub-title">Wireless Over-Ear NC Headphones</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹5,999</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹7,999 </strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>
+ 
+ <!-- row3 -->
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/boat255r-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">boAt Rockerz 255</h3>
+             <p class="card-sub-title">I-Ear Wireless Neckbands</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹899</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹2,990</strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>    
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/jbl100-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">JBL Wave 100</h3>
+             <p class="card-sub-title">In-Ear Truly Wireless Earbuds</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹2,999</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹6,999</strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>    
+ 
+ 
+     <section class="hover-control">
+         <div class="card-content12">
+             <div class="card-image-color">
+             <img src="../HTML-CSS PROJECT/sony1000xm4-1.png" alt="Card Image" class="card-image" height="190" width="190" id="images">
+             </div>
+             <h4 class="star-rating" style="color: rgb(249, 28, 28);">☆☆☆☆☆</h4>
+             <h3 class="card-main-title">Sony WF-1000XM4</h3>
+             <p class="card-sub-title">Wireless In-Ear NC Earbuds</p>
+             <hr class="divide-line">
+             <h2 class="product-price"><span> ₹19,990</span>&nbsp;&nbsp;<span class="price-decrese"><strike> ₹24,990</strike></span></h2>
+             <input class="add-to-cart-button" type="button" placeholder="Add to Cart" value="Add to Cart">
+             <!-- <a href="#" class="card-button">Learn More</a> -->
+         </div>
+     </section>
+ 
+     <section class="card-content12">
+         <div  class="Browse-All-Products">
+            <a href="www.google.com" >Browse All Products-></a>
+         </div>
+     </section>
+     </section>
+ </section>
+
+<div  class="our-advatages-title">
+<div><h1>Our Advantages</h1></div>
+</div>
+<div>
+    <section>
+  <ul class="advantages-list">
+      <li class="advantages-item">
+         <img src="delivery truck-removebg-preview.png" >
+          <div>
+              <h3>Express Delivery</h3>
+              <p>Ships in 24 Hours</p>
+          </div>
+      </li>
+
+      <li class="advantages-item">
+          <img src="shild2-removebg-preview.png" >
+          <div>
+              <h3>Brand Warranty</h3>
+              <p>100%Original Product</p>
+          </div>
+      </li>
+
+      <li class="advantages-item">
+          <img src="tags-logo-removebg-preview.png" >
+          <div>
+              <h3>Exciting Deals</h3>
+              <p>On all Prepaid Orders</p>
+          </div>
+      </li>
+
+      <li class="advantages-item">
+          <img src="card-icon-removebg-preview.png" >
+          <div>
+              <h3>Secure Payment</h3>
+              <p>SSL/Secure Certificate</p>
+          </div>
+      </li>
+  </ul>
+</section>
+</div>
+           <!-- FOoTER ADDRESS IN HTML -->
+    
+           <footer >
+           
+            <section>
+                <h3>Tech-Shop</h3>
+                <p>Subscribe to our Email alerts to receive early discount offer,and new product info.</p>
+                <p ><input type="email" name="email" placeholder="Email Address" class="footer-email"></p>
+                <p><input type="button" value="Subscribe"  placeholder="Contact Us" class="footer-button"></p>
+            </section>
+
+            <section>
+          
+            <ul type="none">
+                <li><h3>Help</h3></li>
+                <li>FAQs</li>
+                <li>Track Order</li>
+                <li>Cancle Order</li>
+                <li>Return Order</li>
+                <li>Warranty Info</li>
+            </ul>
+            </section>
+
+            <section>
+               
+                <ul type="none">
+                    <li> <h3>Policies</h3></li>
+                    <li>Return Policy</li>
+                    <li>Security</li>
+                    <li>Sitemap</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </section>
+
+            <section>
+                
+                <ul type="none">
+                    <li><h3>Company</h3></li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Service Center</li>
+                    <li>Careers</li>
+                    <li>Affiliates</li>
+                </ul>
+            </section>
+
+           </footer>
+        
+        <div class="social-media">
+
+       <div> 2024|All Rights Reserved.Built by|K RADHA KRISHNA YADAV </div>
+        
+          <section class="social-media-adjest">
+            <a href="">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+          </section>
+    </div>
+
+</body>
+</html>
