@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-shop-Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+           body{
+            background-color: rgba(0, 0, 0, 0.916);
+            font-family: calibri,sans-serif;
+            margin: 0px;
+            /* height: 1000px; */
+        }
+
+        header{
+           
+            /* background-color: rgba(0, 0, 0, 0.918); */
+            /* border: 1px solid white; */
+            display: grid;
+            grid-template-columns: 2,1fr;
+            color: white;
+            height:80px;
+            
+          
+        
+        }
+        section a{
+           
+            color: white;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.916);
+        }
+
+        .home{
+            position:absolute;
+            top: 0px;
+            left:10px;
+            color:white;
+           
+           
+        }
+        .text:hover{
+            color: #ff2a00;
+           
+        }
+
+      
+        .searchicon{
+            position: absolute;
+            top: 20px;
+            left: 1100px;
+            height: 20px;
+            width: 20px;
+            /* background-color:white; */
+            border-radius: 5px;
+          
+        }
+        
+      
+
+        .carticon{
+            position: absolute;
+            top: 20px;
+            left: 1155px;
+            height: 20px;
+            width: 20px;
+            /* background-color: white; */
+            border-radius: 5px;
+        }
+
+        .loginicon{
+            position: absolute;
+            top: 20px;
+            left: 1210px;
+            height: 20px;
+            width: 20px;
+            /* background-color: white; */
+            border-radius: 5px;
+            
+        }
+
+
+
+/* CART IN HTML PROJECT */
+/* CART IN HTML PROJECT */
+/* CART IN HTML PROJECT */
+
+
+        .cart{
+        position: absolute;
+        top: 110px;
+        left: 10px;
+        gap: 100px;
+        padding: 100px;
+        border-radius: 5px;
+        height:300px;
+        width: 500px;
+       background-color:rgba(38, 35, 35, 0.523);
+       /* background-attachment: fixed; */
+       overflow-y: scroll;
+        }
+
+       .card-title{
+        color: white;
+      }
+
+
+      .card-text{
+        color: white;
+      }
+
+
+
+      .cart-information1{
+               position: absolute;
+               top: 70px;
+               left:200px ;
+               width: 400px;
+      }
+      .cart-image1{
+        position: absolute;
+               top: 90px;
+               left:40px;
+              
+      }
+      .increment-button1{
+              color: #ff2a00;
+              width: 30px;        
+      }
+      .delete-button1{
+              position: absolute;
+              top: 28px;
+              left: 410px;
+              height: 15px;
+              width: 15px;
+      }
+      /* .delete-button-hover1:hover{
+        transform: scale(.5);
+        color: white;
+      } */
+
+
+
+
+
+      .cart-information2{
+               position: absolute;
+               top: 300px;
+               left:200px ;
+               width: 400px;
+      }
+      .cart-image2{
+        position: absolute;
+               top:300px;
+               left:60px ;
+      }
+      .increment-button2{
+              color: #ff2a00;
+              width: 30px;          
+      }
+      .delete-button2{
+              height: 10px;
+              width: 10px;
+      }
+      .delete-button2{
+              position: absolute;
+              top: 30px;
+              left: 410px;
+              height: 15px;
+              width: 15px;
+      }
+
+
+
+
+
+
+      .cart-information3{
+               position: absolute;
+               top: 550px;
+               left:200px ;
+               width: 400px;
+      }
+      .cart-image3{
+        position: absolute;
+               top: 570px;
+               left:60px ;
+      }
+      .increment-button3{
+              color: #ff2a00;
+              width: 30px;        
+      }
+      .delete-button3{
+              height: 10px;
+              width: 10px;
+      }
+      .delete-button3{
+              position: absolute;
+              top: 30px;
+              left: 410px;
+              height: 15px;
+              width: 15px;
+      }
+
+
+
+
+
+      .cart-information4{
+               position: absolute;
+               top:780px;
+               left:200px ;
+               width: 400px;
+      }
+      .cart-image4{
+        position: absolute;
+               top:800px;
+               left:60px ;
+      }
+      .increment-button4{
+              color: #ff2a00;
+              width: 30px;       
+      }
+      .delete-button4{
+              height: 10px;
+              width: 10px;
+      }
+      .delete-button4{
+              position: absolute;
+              top: 30px;
+              left: 410px;
+              height: 15px;
+              width: 15px;
+      }
+
+
+      .scrollbar-hr{
+           width: 580px;
+           margin-top: 50px;
+           margin-left: -150px;
+
+      }
+
+ /* CART PRICE CARD IN HTML */
+
+      .cart-price-card{
+            position: absolute;
+            top: 110px;
+            left: 970px;
+            width: 250px;
+            color: white;
+            /* background-color:rgba(38, 35, 35, 0.523); */
+      }
+
+      .cart-price-card p{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 30px;
+      }
+
+      .card-title1{
+           text-align: center;
+      }
+
+      .card-text2{
+           text-align:end;
+      }
+
+      .checkout-color{
+            color: white;
+            background-color: #ff2a00;
+            border: 2px solid  #ff2a00;
+            height: 30px;
+            width:250px;
+            border-radius: 3px;
+      }
+
+
+
+
+
+     
+
+ 
+    
+ /* FOTTER SECTION IN CSS  */
+ /* FOTTER SECTION IN CSS  */
+ /* FOTTER SECTION IN CSS  */
+
+
+ 
+footer{
+    position: absolute;
+    top: 1000px;
+    height: 250px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:space-between;
+    color: white;
+    background-color: rgb(30, 29, 29);
+    width: 1270px;
+    /* background-color: white; */
+}
+
+.footer-email{
+    height: 25px;
+    width: 250px;
+    background-color: rgb(30, 29, 29);
+    border: 2px solid white;
+    border-radius: 3px;
+    
+}
+ .footer-button{
+    width: 170px;
+    height:30px ;
+    color: white;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 3px;
+ }
+ section{
+    line-height: 30px;
+ }
+
+/* FOTTER 2222 section IN CSS */
+
+
+
+.social-media {
+  position: absolute;
+  top:1250px;
+  height:60px;
+  width: 1263px;
+  color: white;
+  display: grid;
+  text-align: start;
+  align-content:center;
+  /* justify-content:space-around; */
+  grid-template-columns: repeat(2,1fr);
+  background-color: rgb(18, 18, 18);
+  
+  
+   }
+
+   .social-media-adjest{
+        display: flex;
+        justify-content: space-evenly;
+         margin-left:500px;
+         color: white;
+   }
+
+ 
+  
+   
+    </style>
+</head>
+<body>
+
+    <header>
+
+ <!-- Tech-Shop icon    -->
+
+
+           <section>
+            <h4 class="home"><a href="../HTML-CSS PROJECT/FINAL PROJECT CODE.html" class="text">Tech-Shop</a></h4>
+        </section>
+            
+<!-- HEADER LIGOS OR ICONS -->
+    
+    
+<div class="searchicon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon"><path fill="#fafafa" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+    </div>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"  class="carticon"><a href="../HTML-CSS PROJECT/CART-PAGE.html"><path fill="#f7f7f8" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></a></svg>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  class="loginicon"><a href="../HTML-CSS PROJECT/FINAL LOGIN FORM.html"><path fill="#f9fbfa" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></a></svg>
+       
+          
+       </header>
+    
+
+<!-- CART CODE IN HTML PROJECT -->
+
+
+        <div class="cart">
+
+
+            <div class="card-content">
+                <div class="cart-image1">
+                <img src="../HTML-CSS PROJECT/jbl760nc-1.png" alt="Card Image" class="card-image" height="100" width="100">
+            </div>
+
+                <div class="cart-information1">
+                    
+                <h2 class="card-title">JBL Live 660NC Wireless Over-Ear NC HeadPhones</h2>
+                <p class="card-text">₹9,999<strike> ₹14,999 </strike></p>
+                <div class="delete-button-hover1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="delete-button1"><path fill="#e2e9e8" d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z"/></svg>
+               </div>
+                <div class="quantity-button">
+                    <button class="quantity-button" id="decrement">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="increment-button1">
+                    <button class="quantity-button" id="increment">+</button>
+                </div>
+                <!-- <a href="#" class="card-button">Learn More</a>
+                  -->
+                <hr class="scrollbar-hr">
+                </div>
+               
+               
+            </div>
+             
+
+            <div class="card-content">
+                <div class="cart-image2">
+                <img src="../HTML-CSS PROJECT/boat518-1.png" alt="Card Image" class="card-image" height="100" width="100">
+            </div>
+                <div class="cart-information2">
+                <h2 class="card-title">boAt Rockerz 518 On-Ear Wireless HeadPhones</h2>
+                <p class="card-text">₹1,299 <strike> ₹3,990 </strike></p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="delete-button2"><path fill="#e2e9e8" d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z"/></svg>
+                <div class="quantity-button">
+                    <button class="quantity-button" id="decrement">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="increment-button2">
+                    <button class="quantity-button" id="increment">+</button>
+                </div>
+                <!-- <a href="#" class="card-button">Learn More</a> -->
+                <hr class="scrollbar-hr">
+                </div>
+               
+            </div>
+           
+
+            <div class="card-content">
+                <div class="cart-image3">
+                <img src="../HTML-CSS PROJECT/boat255r-1.png" alt="Card Image" class="card-image" height="100" width="100">
+            </div>
+                <div class="cart-information3">
+                <h2 class="card-title">boAt Rockerz 255 On-Ear Phones</h2>
+                <p class="card-text">₹1,299<strike> ₹3,990 </strike></p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="delete-button3"><path fill="#e2e9e8" d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z"/></svg>
+                <div class="quantity-button">
+                    <button class="quantity-button" id="decrement">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="increment-button3">
+                    <button class="quantity-button" id="increment">+</button>
+                </div>
+                <!-- <a href="#" class="card-button">Learn More</a> -->
+                <hr class="scrollbar-hr">
+                </div>
+               
+            </div>
+
+          
+
+
+
+            <div class="card-content">
+                <div class="cart-image4">
+                <img src="../HTML-CSS PROJECT/boat203-1.png" alt="Card Image" class="card-image" height="100" width="100">
+               </div>
+                <div class="cart-information4">
+                <h2 class="card-title">boAt Airdopes 203 Onp-Ear Wireless EarBuds</h2>
+                <p class="card-text">₹1,074 <strike> ₹3,999 </strike></p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="delete-button4"><path fill="#e2e9e8" d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0L284.2 0c12.1 0 23.2 6.8 28.6 17.7L320 32l96 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 96C14.3 96 0 81.7 0 64S14.3 32 32 32l96 0 7.2-14.3zM32 128l384 0 0 320c0 35.3-28.7 64-64 64L96 512c-35.3 0-64-28.7-64-64l0-320zm96 64c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16s16-7.2 16-16l0-224c0-8.8-7.2-16-16-16z"/></svg>
+                <div class="quantity-button">
+                    <button class="quantity-button" id="decrement">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="increment-button4">
+                    <button class="quantity-button" id="increment">+</button>
+                </div>
+                <!-- <a href="#" class="card-button">Learn More</a> -->
+            </div>
+            </div>
+
+
+            <!-- <div class="card-content">
+                <div class="cart-image5">
+                <img src="../HTML-CSS PROJECT/boat255r-1.png" alt="Card Image" class="card-image" height="100" width="100">
+            </div>
+                <div class="cart-information5">
+                <h2 class="card-title">boAt Rockerz 255 On-Ear Phones</h2>
+                <p class="card-text">₹1,299<strike> ₹3,990 </strike></p>
+                <div class="quantity-button">
+                    <button class="quantity-button" id="decrement">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="increment-button5">
+                    <button class="quantity-button" id="increment">+</button>
+                </div> -->
+                <!-- <a href="#" class="card-button">Learn More</a> -->
+
+
+                </div>  
+            </div>
+        </div>
+
+
+            
+           <div class="cart-price-card">
+            
+                <h3 class="card-title1">Order Summary      (4 items)</h3>
+                <p ><span>Original Price</span> <span>₹22,978</span></p>
+                <p ><span>Discount</span> <span style="color: green;">-₹10,132</span></p>
+                <p ><span>Deliveryfree</span> <span style="color: green;">Free</span></p>
+                <hr hr-in-cardprice>
+                <p><span><b style="font-size:20px;">Total Price</b></span> <span><b>₹12,846</b></span></p>
+                <input type="button" value="Checkout" placeholder="Checkout"  class="checkout-color">
+                <!-- <a href="#" class="card-button">Learn More</a> -->
+                <!-- ₹999 </p> -->
+           
+           </div>
+          
+
+           
+          <!-- Project fotter-in html  -->
+           <!-- FOTTER ADDRESS IN HTML -->
+    
+           <footer >
+           
+            <section>
+                <h3>Tech-Shop</h3>
+                <p>Subscribe to our Email alerts to receive early discount offer,and new product info.</p>
+                <p ><input type="email" name="email" placeholder="Email Address" class="footer-email"></p>
+                <p><input type="button" value="Subscribe"  placeholder="Contact Us" class="footer-button"></p>
+            </section>
+
+
+
+            <section>
+          
+            <ul type="none">
+                <li><h3>Help</h3></li>
+                <li>FAQs</li>
+                <li>Track Order</li>
+                <li>Cancle Order</li>
+                <li>Return Order</li>
+                <li>Warranty Info</li>
+            </ul>
+            </section>
+
+
+
+            <section>
+               
+                <ul type="none">
+                    <li> <h3>Policies</h3></li>
+                    <li>Return Policy</li>
+                    <li>Security</li>
+                    <li>Sitemap</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </section>
+
+
+            <section>
+                
+                <ul type="none">
+                    <li><h3>Company</h3></li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Service Center</li>
+                    <li>Careers</li>
+                    <li>Affiliates</li>
+                </ul>
+            </section>
+
+           </footer>
+        
+        <div class="social-media">
+
+       <div> 2024|All Rights Reserved.Built by|K RADHA KRISHNA YADAV </div>
+        
+          <section class="social-media-adjest">
+            <a href=""class="media-gap">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="media-gap">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href=""class="media-gap">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href=""class="media-gap">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+          </section>
+    </div>
+
+</body>
+</html>
